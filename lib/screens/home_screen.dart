@@ -35,11 +35,11 @@ class HomeScreen extends StatelessWidget {
             const Spacer(),
             Container(
               height: screenHeight * 0.6,
-              width: double.infinity,
+              width: MediaQuery.of(context).size.width * .97,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
               decoration: const BoxDecoration(
                 color: AppColor.primaryColor,
-                borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
+                borderRadius: BorderRadius.all(Radius.circular(30)),
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
